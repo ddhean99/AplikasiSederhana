@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#1a8cff"
+    android:gravity="center"
+    tools:context="com.example.aplikasisederhana.Halaman1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:gravity="center">
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/text"
+                        android:text="  1. Pengertian Activity \n
+              Activity adalah komponen pada aplikasi Android yang menampilkan dan mengatur halaman aplikasi sebagai tempat interaksi antara pengguna dengan aplikasi, seperti membuat panggilan telepon, mengambil foto, mengirim pesan singkat, atau mengirim email. Sebuah Activity mengatur satu halaman user interface aplikasi. Sehingga jika sebuah aplikasi Android memiliki beberapa halaman user interface yang saling berinteraksi, berarti aplikasi tersebut memiliki beberapa Activity yang saling berinteraksi.
+                            \n 2. Membuat Activity \n
+              Activity merupakan sebuah class yang menghandle sebuah halaman user interface pada aplikasi Android. Untuk membuat sebuah Activity, kita lakukan dengan membuat sebuah class yang meng-extends class Activity. Bila kita membuat project aplikasi Android baru pada Android Development Tools, maka ada sebuah class yang bernama MainActivity.java yang tergenerate secara otomatis.\n\n\n"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"/>
+                    <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+        <GridLayout
+            android:id="@+id/activity_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#1a8cff"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnHal11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#1a8cff"
+                    android:text="@string/link_materi"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </GridLayout>
+
+
+        <GridLayout
+            android:id="@+id/service_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnHal12"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#1a8cff"
+                    android:text="@string/contoh_syntax"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

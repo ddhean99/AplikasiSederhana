@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#1a8cff"
+    android:gravity="center"
+    tools:context="com.example.aplikasisederhana.Halaman3">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/broadcast_receiver"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:gravity="center">
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text"
+            android:text="              Broadcast Receiver berfungsi menerima pesan intent dari aplikasi lain atau dari sistem. Sebagai contoh, suatu aplikasi mengirim pesan berisi perintah tertentu untuk aplikasi lain bahwa beberapa data telah diunduh ke perangkat dan tersedia bagi mereka untuk menggunakan apklikasi tersebut, jadi Broadcast Receiver inilah yang akan menangani komunikasi ini dan akan melakukan tindakan yang tepat.Sebuah Broadcast Receiver diimplementasikan sebagai subclass dari class BroadcastReceiver dan setiap pesan akan dikirim dan diterima sebagai objek Intent.\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <GridLayout
+                android:id="@+id/activity_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#1a8cff"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/btnHal31"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#1a8cff"
+                        android:text="@string/link_materi"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+
+            <GridLayout
+                android:id="@+id/service_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnHal32"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#1a8cff"
+                        android:text="@string/contoh_syntax"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

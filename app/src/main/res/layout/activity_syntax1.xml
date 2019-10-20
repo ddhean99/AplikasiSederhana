@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#1a8cff"
+    android:gravity="center"
+    tools:context="com.example.aplikasisederhana.Syntax1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/syntax_activity"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:gravity="center">
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text"
+            android:text="      public class Home extends AppCompatActivity { \n
+
+              \n Button btn1; \n
+    @Override \n
+    protected void onCreate(Bundle savedInstanceState) { \n
+              super.onCreate(savedInstanceState); \n
+              setContentView(R.layout.activity_home);\n\n
+
+              btn1 = (Button) findViewById(R.id.btnHal1); \n
+              btn1.setOnClickListener(new View.OnClickListener() { \n
+              @Override \n
+              public void onClick(View v) { \n
+                Intent i = null; \n
+                i = new Intent(getApplicationContext(),Halaman1.class); \n
+                startActivity(i); \n
+            } \n
+        }); \n
+
+      } \n
+    }); \n
+  } \n
+} \n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+</LinearLayout>

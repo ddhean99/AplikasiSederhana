@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#1a8cff"
+    android:gravity="center"
+    tools:context="com.example.aplikasisederhana.Halaman5">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/layout"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:gravity="center">
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text"
+            android:text="              Layout merupakan suatu tampilan tata letak di Android untuk mengatur penempatan teks, gambar, ataupun komponen lainnya sehingga tampilan pada aplikasi yang dibuat terlihat rapih dan nyaman untuk dilihat oleh pengguna.\n
+Jenis - jenis dan fungsi Layout \n
+1.Linear Layout \n
+                Linear Layout adalah layout yang menyejajarkan semua child view-nya dalam satu arah, secara vertikal atau horizontal.\n
+2.Relative Layout \n
+                Relative Layout adalah layout yang penataan nya ini adalah penataan yang menempatkan widget-widget didalamnya seperti layer, sehingga sebuah widget dapat berada di atas/di bawah widget lainnya atau dengan kata lain Relative merupakan layout yang penataannya lebih bebas (Relative) sehingga bisa di tata di mana saja.\n
+3.Constraint Layout \n
+                Sebenarnya Constraint Layout mirip dengan Relative Layout, karena letak View bergantung pada View lain dalam satu Layout ataupun dengan Parent Layoutnya. Contohnya di Relative Layout kita bisa meletakkan sebuah View di atas, bawah, atau samping View lain.\n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <GridLayout
+                android:id="@+id/activity_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#1a8cff"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/btnHal51"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#1a8cff"
+                        android:text="@string/link_materi"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+
+            <GridLayout
+                android:id="@+id/service_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnHal52"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#1a8cff"
+                        android:text="@string/contoh_syntax"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

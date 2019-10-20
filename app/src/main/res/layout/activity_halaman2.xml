@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#1a8cff"
+    android:gravity="center"
+    tools:context="com.example.aplikasisederhana.Halaman2">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/service"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:gravity="center">
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text"
+            android:text="           Service adalah komponen aplikasi yang menjalankan operasi tertentu yang bisa berjalan lama pada sistem Android, biasanya service itu berjalan di latar belakang. Service ini tidak menyediakan antarmuka pengguna (UI).
+Ada dua macam service pada Android, yaitu : \n
+\n 1. Started \n
+            Service yang komponen aplikasinya dimulai dengan memanggil startService(). Service ini akan berjalan selama belum dimatikan atau proses yang dijalankan selesai. Service akan tetap berjalan walaupun komponen yang lain dimatikan oleh sistem Android. Service ini digunakan untuk melakukan proses yang tidak memberikan nilai balik ke komponen yang memanggil. Contohnya seperti mengunduh atau mengunggah berkas.\n
+\n 2. Bound \n
+            Service jenis ini merupakan tipe service yang dijalankan oleh komponen lain, namun saling mengikat satu sama lain. Hubungan yang terjadi antar kedua komponen tersebut seperti client-server. Bisa saling menerima response dan menerima request yang ada. \n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <GridLayout
+                android:id="@+id/activity_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#1a8cff"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/btnHal21"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#1a8cff"
+                        android:text="@string/link_materi"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+
+            <GridLayout
+                android:id="@+id/service_card"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnHal22"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#1a8cff"
+                        android:text="@string/contoh_syntax"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
